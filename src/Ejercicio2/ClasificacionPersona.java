@@ -26,7 +26,6 @@ class ListPersonas {
         }
     }
 
-    //Realizar los resultados necesarios a través de un for
     public void ResultadosPersonas(){
         int personas_totales = list_personas.length;
         int personas_mayores_de_edad = 0;
@@ -36,6 +35,7 @@ class ListPersonas {
         int personas_femeninas = 0;
 
 
+        //Bucle for para poder sacar los resultados necesarios
         for (Persona listPersona : list_personas) {
             if (listPersona.edad >= 18) {
                 personas_mayores_de_edad++;
@@ -54,7 +54,7 @@ class ListPersonas {
             }
         }
 
-
+        //Imprimir los resultados
         System.out.println("Personas mayores de edad: " + personas_mayores_de_edad);
         System.out.println("Personas menores de edad: " + personas_menores_de_edad);
         System.out.println("Personas masculinas mayores de edad: " + personas_masculinas_mayores_de_edad);
